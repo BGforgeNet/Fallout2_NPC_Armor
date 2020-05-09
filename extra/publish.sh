@@ -6,7 +6,6 @@ bin_dir="$(realpath $bin_dir)"
 dat2a="wine $bin_dir/dat2.exe a -1"
 file_list="$(realpath file.list)"
 release_dir="$(realpath $release_dir)"
-zip="${mod_name}_v${mod_version}.zip"
 mod_dir="${release_dir}/mods"
 
 # release?
@@ -15,6 +14,7 @@ if [ -n "$TRAVIS_TAG" ]; then # tag found: releasing
 else
   mod_version="git$TRAVIS_COMMIT"
 fi
+zip="${mod_name}_v${mod_version}.zip"
 
 mkdir -p "$mods_dir"
 cd "$data_dir"
