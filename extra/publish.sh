@@ -6,7 +6,7 @@ bin_dir="$(realpath $bin_dir)"
 dat2a="wine $bin_dir/dat2.exe a -1"
 file_list="$(realpath file.list)"
 release_dir="$(realpath $release_dir)"
-mod_dir="${release_dir}/mods"
+mods_dir="${release_dir}/mods"
 
 # release?
 if [ -n "$TRAVIS_TAG" ]; then # tag found: releasing
