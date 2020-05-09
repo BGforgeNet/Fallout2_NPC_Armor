@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/BGforgeNet/Fallout2_NPC_Armor.svg?branch=master)](https://travis-ci.org/BGforgeNet/Fallout2_NPC_Armor)
 [![Discord chat](https://img.shields.io/discord/420268540700917760?logo=discord)](https://discord.gg/4Yqfggm)
 
-[__Download__](releases/latest)
+[__Download__](https://github.com/BGforgeNet/Fallout2_NPC_Armor/releases/latest)
 | [__Installation__](#installation)
 | [__Report issues__](https://github.com/BGforgeNet/Fallout2_NPC_Armor/issues)
 
