@@ -45,5 +45,5 @@ $dat2a "$mods_dir/$dat" @"$file_list"
 
 cd $release_dir
 
-zip -r "${mod_name}_${version}.zip" *
+zip -r "${mod_name}_${mod_version}.zip" *
 mv "$zip" ..
