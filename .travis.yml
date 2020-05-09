@@ -1,0 +1,37 @@
+language: minimal
+dist: bionic
+sudo: false
+
+addons:
+  apt:
+    update: true
+    packages:
+      - p7zip
+      - wine-stable
+      - wine32
+
+script:
+  - ./extra/publish.sh
+
+env:
+  global:
+    - extra_dir: extra
+    - bin_dir: extra/bin
+    - data_dir: data
+    - release_dir: release
+    - WINEARCH: win32
+    - WINEDEBUG: -all
+    - sfall_version: 4.2.4
+    - mpack_version: 4.2.4
+    - mod_name: npc_armor
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file:
+    - npc_armor*.zip
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
