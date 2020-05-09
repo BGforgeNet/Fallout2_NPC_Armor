@@ -5,7 +5,7 @@
 
 [__Download__](releases/latest)
 | [__Installation__](#installation)
-| [__Report issues__](issues)
+| [__Report issues__](https://github.com/BGforgeNet/Fallout2_NPC_Armor/issues)
 
 This is a Fallout 2 mod enabling party members to change their appearance according to the armor that they are wearing. Originally constructed by B-team.
 
