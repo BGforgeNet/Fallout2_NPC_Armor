@@ -21,6 +21,13 @@ jobs:
       - name: Package
         run: ./extra/package.sh
 
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        if: "!startsWith(github.ref, 'refs/tags/')"
+        with:
+          name: npc_armor.zip
+          path: npc_armor*.zip
+
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
