@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 3
+Updated sfall to 4.2.9.
+
 ## Version 2
 Added `critters.lst` from RPU to allow the mod to work seamlessy on UPU.
 
