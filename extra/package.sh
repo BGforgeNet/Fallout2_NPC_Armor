@@ -2,20 +2,28 @@
 
 set -xeu -o pipefail
 
-bin_dir="$(realpath $bin_dir)"
+export WINEARCH="win32"
+export WINEDEBUG="-all"
+extra_dir="extra"
+bin_dir="$extra_dir/bin"
+data_dir="data"
 dat2a="wine $bin_dir/dat2.exe a -1"
-file_list="$(realpath file.list)"
-release_dir="$(realpath $release_dir)"
+file_list="file.list"
+release_dir="$(realpath release)"
 mods_dir="${release_dir}/mods"
+mod_name="npc_armor"
 
-# release?
-if [ -n "$TRAVIS_TAG" ]; then # tag found: releasing
-  mod_version="$(echo $TRAVIS_TAG | tr -d 'v')" # numeric
-else
-  mod_version="git$TRAVIS_COMMIT"
+# package filename
+short_sha="$(git rev-parse --short HEAD)"
+version="git$short_sha"
+if [[ ! -z "${GITHUB_REF-}" ]]; then
+  if echo "$GITHUB_REF" | grep "refs/tags"; then # tagged
+    version="$(echo $GITHUB_REF | sed 's|refs\/tags\/||')"
+  fi
 fi
-zip="${mod_name}_v${mod_version}.zip"
+zip="${mod_name}_v${version}.zip"
 
+# prepare
 mkdir -p "$mods_dir"
 cd "$data_dir"
 
