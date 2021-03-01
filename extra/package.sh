@@ -21,7 +21,7 @@ if [[ ! -z "${GITHUB_REF-}" ]]; then
     version="$(echo $GITHUB_REF | sed 's|refs\/tags\/||')"
   fi
 fi
-zip="${mod_name}_v${version}.zip"
+zip="${mod_name}_${version}.zip"
 
 # prepare
 mkdir -p "$mods_dir"
