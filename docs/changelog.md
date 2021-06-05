@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 3.1
+Updated sfall to 4.3, and updated armor script from upstream as well.
+
 ## Version 3
 Updated sfall to 4.2.9.
 

@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      sfall_version: 4.2.9
-      mpack_version: 4.2.9
+      sfall_version: 4.3
+      mpack_version: 4.3
     steps:
       - uses: actions/checkout@v2
 
