@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 3.3
+Fixed Cassidy [missing](https://forums.bgforge.net/viewtopic.php?f=39&p=1000#p999) extended rifle animations when being naked.
+
 ## Version 3.2
 Updated sfall to 4.3.0.1.
 
