@@ -6,17 +6,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      sfall_version: 4.3.0.2
-      mpack_version: 4.3
+      sfall_version: 4.3.6
+      mpack_version: 4.3.6
     steps:
       - uses: actions/checkout@v2
 
       - name: Install packages
         run: |
+          set -xeu -o pipefail
           sudo dpkg --add-architecture i386
-          sudo apt -qq update >/dev/null 2>&1
-          sudo apt-get install -o=Dpkg::Use-Pty=0 -y p7zip wine-stable wine32 >/dev/null 2>&1
-          wineboot >/dev/null 2>&1
+          sudo apt -qq update
+          sudo apt install -y --allow-downgrades libpcre2-8-0=10.34-7
+          sudo apt-get install -o=Dpkg::Use-Pty=0 -y p7zip wine-stable wine32
+          wineboot
 
       - name: Package
         run: ./extra/package.sh
