@@ -26,12 +26,12 @@ This is a Fallout 2 mod enabling party members to change their appearance accord
 
 - You can use the mod with [UPU](https://github.com/BGforgeNet/Fallout2_Unofficial_Patch), other modifications or even vanilla game.
 - NPC armor is already included into [RPU](https://github.com/BGforgeNet/Fallout2_Restoration_Project).
-- The mod is preconfigured for Fallout 2. To work with other games based on F2 engine, it'll require additional configuration in `mods/npc_armor.ini`, and [`critters.lst`](https://github.com/BGforgeNet/Fallout2_Restoration_Project/blob/master/data/art/critters/critters.lst) (which might not be the task for the faint of heart).
+- The mod is preconfigured for Fallout 2. To work with other games based on F2 engine, it'll require additional configuration in `mods/npc_armor.ini`, and [`critters.lst`](https://github.com/BGforgeNet/Fallout2_Restoration_Project/blob/master/data/art/critters/critters.lst).
 
 ### Bug reports, feature requests
 
-Go to [github issues](https://github.com/BGforgeNet/Fallout2_NPC_Armor/issues) or [forums](https://forums.bgforge.net/viewforum.php?f=39).
+Go to [github issues](https://github.com/BGforgeNet/Fallout2_NPC_Armor/issues) or [forums](https://forums.bgforge.net/viewforum.php?f=34).
 
 ### Additional info
 
-[**Changelog**](docs/changelog.md)
+[Changelog](docs/changelog.md)
