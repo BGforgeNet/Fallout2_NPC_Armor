@@ -2,6 +2,8 @@
 
 set -xeu -o pipefail
 
+sfall_version=4.4.0.1
+mpack_version=4.4
 export WINEARCH="win32"
 export WINEDEBUG="-all"
 extra_dir="$(realpath extra)"
@@ -29,7 +31,6 @@ mkdir -p "$mods_dir"
 cd "$data_dir"
 
 # script and ini from modderspack
-# shellcheck disable=SC2154 # assigned in workflow file
 mpack_file="modderspack_$mpack_version.7z"
 mpack_url="https://sourceforge.net/projects/sfall/files/Modders%20pack/$mpack_file/download"
 mpack_archive="mpack.7z"
@@ -41,7 +42,6 @@ mv gl_npcarmor.int scripts/
 rm -f $mpack_archive
 
 # sfall
-# shellcheck disable=SC2154 # assigned in workflow file
 sfall_url="https://sourceforge.net/projects/sfall/files/sfall/sfall_$sfall_version.7z/download"
 sfall_archive="sfall.7z"
 wget -q "$sfall_url" -O $sfall_archive
@@ -51,7 +51,7 @@ rm -f $sfall_archive
 
 # pack .dat
 dat="${mod_name}.dat"
-find . -type f | sed -e 's|^\.\/||' -e 's|\/|\\|g' | sort > "$file_list"
+find . -type f | sed -e 's|^\.\/||' -e 's|\/|\\|g' | sort >"$file_list"
 $dat2a "$mods_dir/$dat" @"$file_list"
 
 cd "$release_dir"
