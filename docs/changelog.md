@@ -3,7 +3,7 @@
 ## Version 3.4
 
 - Added black dude armor animations from https://github.com/rotators/fallout-animations.
-- Sfall updated to 4.4.0.1
+- Sfall updated to 4.4.0.1.
 
 ## Version 3.3
 
