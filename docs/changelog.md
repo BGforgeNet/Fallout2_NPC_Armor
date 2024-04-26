@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.5
+
+- Added black dude [robe](https://github.com/BGforgeNet/Fallout2_NPC_Armor/issues/5) animations.
+- Sfall updated to 4.4.3.1.
+
 ## Version 3.4
 
 - Added black dude armor animations from https://github.com/rotators/fallout-animations.

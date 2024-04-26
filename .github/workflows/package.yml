@@ -13,7 +13,8 @@ jobs:
       - name: ShellCheck
         uses: ludeeus/action-shellcheck@master
 
-      - uses: devopsx/gha-ubuntu-i386-fix@master
+      - name: Install wine
+        uses: devopsx/gha-ubuntu-i386-fix@master
 
       - name: Install packages
         run: |
