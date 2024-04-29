@@ -14,19 +14,22 @@ This is a Fallout 2 mod enabling party members to change their appearance accord
 ## Installation
 
 1. Download the [latest](https://github.com/BGforgeNet/Fallout2_NPC_Armor/releases/latest) release.
-2. Extract the archive into main game directory.
-   NPC armor requires sfall (`ddraw.dll`) version 4+, it's shipped with the mod. If you have a newer version, you don't need to overwite the dll when extracting.
-3. In `ddraw.ini`, find and set
+1. Extract the archive into main game directory.
+   NPC armor requires sfall (**ddraw.dll**) version 4+, it's shipped with the mod. If you have a newer version, you don't need to overwite the dll when extracting.
+1. In **ddraw.ini**, find and set
+
    ```ini
    [Scripts]
    IniConfigFolder=mods
    ```
 
+1. Ensure that the line `npc_armor.dat` is present in **mods/mods_order.txt**.
+
 **Notes:**
 
 - You can use the mod with [UPU](https://github.com/BGforgeNet/Fallout2_Unofficial_Patch), other modifications or even vanilla game.
 - NPC armor is already included into [RPU](https://github.com/BGforgeNet/Fallout2_Restoration_Project).
-- The mod is preconfigured for Fallout 2. To work with other games based on F2 engine, it'll require additional configuration in `mods/npc_armor.ini`, and [`critters.lst`](https://github.com/BGforgeNet/Fallout2_Restoration_Project/blob/master/data/art/critters/critters.lst).
+- The mod is preconfigured for Fallout 2. To work with other games based on F2 engine, it'll require additional configuration in **mods/npc_armor.ini**, and [**critters.lst**](https://github.com/BGforgeNet/Fallout2_Restoration_Project/blob/master/data/art/critters/critters.lst).
 
 ### Bug reports, feature requests
 
