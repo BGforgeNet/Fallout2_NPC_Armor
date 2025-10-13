@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.6
+
+- Sfall updated to 4.4.8.
+
 ## Version 3.5
 
 - Added black dude [robe](https://github.com/BGforgeNet/Fallout2_NPC_Armor/issues/5) animations.

@@ -2,8 +2,8 @@
 
 set -xeu -o pipefail
 
-sfall_version=4.4.3.1
-mpack_version=4.4.3
+sfall_version=4.4.8
+mpack_version=4.4.8
 export WINEARCH="win32"
 export WINEDEBUG="-all"
 extra_dir="$(realpath extra)"
