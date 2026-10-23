@@ -1,6 +1,7 @@
 # NPC armor mod for Fallout 2
 
-[![build](https://github.com/BGforgeNet/Fallout2_NPC_Armor/actions/workflows/package.yml/badge.svg)](https://github.com/BGforgeNet/Fallout2_NPC_Armor/actions/workflows/package.yml)
+[![Build status](https://github.com/BGforgeNet/Fallout2_NPC_Armor/actions/workflows/package.yml/badge.svg)](https://github.com/BGforgeNet/Fallout2_NPC_Armor/actions/workflows/package.yml)
+
 [![Telegram](https://img.shields.io/badge/telegram-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange?logo=telegram)](https://t.me/bgforge)
 [![Discord](https://img.shields.io/discord/420268540700917760?logo=discord&label=discord&color=blue&logoColor=FEE75C)](https://discord.gg/4Yqfggm)
 [![IRC](https://img.shields.io/badge/%23IRC-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange)](https://bgforge.net/irc)
@@ -15,7 +16,7 @@ This is a Fallout 2 mod enabling party members to change their appearance accord
 
 1. Download the [latest](https://github.com/BGforgeNet/Fallout2_NPC_Armor/releases/latest) release.
 1. Extract the archive into main game directory.
-   NPC armor requires sfall (**ddraw.dll**) version 4+, it's shipped with the mod. If you have a newer version, you don't need to overwite the dll when extracting.
+   NPC armor requires sfall (**ddraw.dll**) version 4+, it's shipped with the mod. If you have a newer version, you don't need to overwrite the dll when extracting.
 1. In **ddraw.ini**, find and set
 
    ```ini
@@ -31,10 +32,10 @@ This is a Fallout 2 mod enabling party members to change their appearance accord
 - NPC armor is already included into [RPU](https://github.com/BGforgeNet/Fallout2_Restoration_Project).
 - The mod is preconfigured for Fallout 2. To work with other games based on F2 engine, it'll require additional configuration in **mods/npc_armor.ini**, and [**critters.lst**](https://github.com/BGforgeNet/Fallout2_Restoration_Project/blob/master/data/art/critters/critters.lst).
 
-### Bug reports, feature requests
+## Bug reports, feature requests
 
 Go to [github issues](https://github.com/BGforgeNet/Fallout2_NPC_Armor/issues) or [forums](https://forums.bgforge.net/viewforum.php?f=34).
 
-### Additional info
+## Additional info
 
-[Changelog](docs/changelog.md)
+[**Changelog**](docs/changelog.md)
