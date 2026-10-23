@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.7
+
+- Sfall updated to 4.5.1.
+
 ## Version 3.6
 
 - Sfall updated to 4.4.8.
